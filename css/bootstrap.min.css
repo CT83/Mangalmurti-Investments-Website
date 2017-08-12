@@ -8050,3 +8050,19 @@ button.close {
     opacity: 0;
     filter:alpha(opacity=0); /* IE support */
 }
+
+@media (max-width: 767px) {
+  .carousel {
+    margin-bottom: 7%;
+  }   
+  .carousel-indicators {
+    bottom: auto;
+    top: 105%;
+  }
+  .carousel-indicators li {
+    border-color: #666;
+  }
+  .carousel-indicators .active {
+    background-color: #666;
+  }
+}
