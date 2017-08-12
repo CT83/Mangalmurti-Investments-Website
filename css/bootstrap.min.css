@@ -8053,11 +8053,11 @@ button.close {
 
 @media (max-width: 767px) {
   .carousel {
-    margin-bottom: 7%;
+    margin-bottom: 15%;
   }   
   .carousel-indicators {
     bottom: auto;
-    top: 102%;
+    top: 105%;
   }
   .carousel-indicators li {
     border-color: #666;
