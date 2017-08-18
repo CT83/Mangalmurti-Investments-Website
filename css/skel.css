@@ -245,3 +245,11 @@
 		.\-3u { margin-left: 25% }
 		.\-2u { margin-left: 16.6666666667% }
 		.\-1u { margin-left: 8.3333333333% }
+
+		li{
+			margin:0px 0;
+		}
+		
+		ul{
+			margin:-15px 0;
+		}
