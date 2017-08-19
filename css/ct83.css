@@ -18,3 +18,10 @@
 .hvr-grow:active {
     transform: scale(1.1);
 }
+
+#map {
+    height: 400px;
+    width: 100%;
+    background-color:#1c1d26;
+    fullscreenControl:false;
+   }
