@@ -150,7 +150,7 @@
 					</section>
 
 					<section class="4u 6u$(medium) 12u$(xsmall)">
-						<span class="icon alt major fa-envelope hvr-grow"></span>
+						<span id="PostalSchemesIcon" class="icon alt major fa-envelope hvr-grow"></span>
 						<h3>Postal Schemes</h3>
 						<ul style="list-style: none;">
 							<li>Public Provident Fund</li>
@@ -162,7 +162,7 @@
 					</section>
 
 					<section class="4u$ 6u(medium) 12u$(xsmall)">
-						<span class="icon alt major fa-umbrella hvr-grow"></span>
+						<span id="InsuranceIcon" class="icon alt major fa-umbrella hvr-grow"></span>
 						<h3>Insurance</h3>
 						<ul style="list-style: none;">
 							<li>Life & Non-Life</li>
@@ -173,7 +173,7 @@
 					</section>
 
 					<section class="4u 6u$(medium) 12u$(xsmall)">
-						<span class="icon alt major fa-money hvr-grow"></span>
+						<span id="MutualFundsIcon" class="icon alt major fa-money hvr-grow"></span>
 						<h3>Mutual Funds</h3>
 						<ul style="list-style: none;">
 							<li>MIP - Debt scheme</li>
@@ -183,7 +183,7 @@
 						</ul>
 					</section>
 
-					<section class="4u 6u(medium) 12u$(xsmall)">
+					<section id="OtherServicesIcon" class="4u 6u(medium) 12u$(xsmall)">
 						<span class="icon alt major fa-file hvr-grow"></span>
 						<h3>Other Services</h3>
 						<ul style="list-style: none;">
@@ -197,10 +197,26 @@
 					
 					<script type="text/javascript">
 						document.getElementById("ShareTradingIcon").onclick = function () {
-							location.href = "contact.html";
+							location.href = "sharesTrading.html";
 						};
 
-						
+						document.getElementById("PostalSchemesIcon").onclick = function () {
+							location.href = "postalSchemes.html";
+						};
+
+						document.getElementById("InsuranceIcon").onclick = function () {
+							location.href = "insurance.html";
+						};
+
+						document.getElementById("MutualFundsIcon").onclick = function () {
+							location.href = "mutualFunds.html";
+						};
+
+						document.getElementById("OtherServicesIcon").onclick = function () {
+							location.href = "otherServices.html";
+						};
+
+
 					</script>
 				</div>
 			</div>
