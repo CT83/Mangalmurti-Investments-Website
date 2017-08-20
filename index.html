@@ -140,7 +140,7 @@
 			<div class="box alt">
 				<div class="row uniform">
 					<section class="4u 6u(medium) 12u$(xsmall)">
-						<a href="#"><span class="icon alt major fa-area-chart hvr-grow"></span></a>
+						<span id="ShareTradingIcon" class="icon alt major fa-area-chart hvr-grow"></span>
 						<h3>Share Trading</h3>
 						<ul style="list-style: none;">
 							<li>Trading</li>
@@ -194,11 +194,14 @@
 							<li>Exchange Traded Fund</li>
 						</ul>
 					</section>
-					<!--<section class="4u$ 6u$(medium) 12u$(xsmall)">
-						<span class="icon alt major fa-certificate hvr-grow"></span>
-						<h3>Massa arcu accumsan</h3>
-						<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
-					</section> -->
+					
+					<script type="text/javascript">
+						document.getElementById("ShareTradingIcon").onclick = function () {
+							location.href = "contact.html";
+						};
+
+						
+					</script>
 				</div>
 			</div>
 			<footer class="major">

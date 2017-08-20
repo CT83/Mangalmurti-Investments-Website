@@ -1,7 +1,12 @@
 /*Changes made by CT83 Below*/
-.carousel-indicators li { visibility: hidden; }
+
+.carousel-indicators li {
+    visibility: hidden;
+}
+
 
 /* Grow */
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -22,6 +27,6 @@
 #map {
     height: 400px;
     width: 100%;
-    background-color:#1c1d26;
-    fullscreenControl:false;
-   }
+    background-color: #1c1d26;
+    fullscreenControl: false;
+}
