@@ -19,6 +19,7 @@
 	<script src="js/skel.min.js"></script>
 	<script src="js/skel-layers.min.js"></script>
 	<script src="js/init.js"></script>
+	<script src="js/clipboard.min.js"></script>
 	<link rel="stylesheet" href="css/ct83.css">
 	<noscript>
 		<link rel="stylesheet" href="css/skel.css" />
@@ -64,7 +65,7 @@
 		function initMap() {
 			var uluru = { lat: 19.218087906207927, lng: 73.09152665701865 };
 			var map = new google.maps.Map(document.getElementById('map'), {
-				zoom:15,
+				zoom: 15,
 				center: uluru
 			});
 			var marker = new google.maps.Marker({
@@ -74,43 +75,66 @@
 		}
 	</script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZscmpjo_m6DOAJjbjvzGM381QYj8pJzA&callback=initMap">
+
 	</script>
 
 	<!-- Main -->
 	<div id="main" class="wrapper style1">
-		
-		<div class="container"><header class="major">
+
+		<div class="container">
+			<header class="major">
 				<h2>Contact Us</h2>
 				<p>Enquires, Consultation, Assistance... <br>We are here for all your financial needs.</p>
 			</header>
 
 			<!-- Content -->
 			<section id="content">
-				<h3>Contact Us</h3>
-				<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper,
-					porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at magna consectetur non, malesuada quis augue.
-					Morbi tincidunt pretium interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel
-					neque eros. Vestibulum diam cubilia adipiscing interdum aliquet aliquet placerat cubilia accumsan cep ante nullam adipiscing
-					tortor odio. Iaculis adipiscing accumsan nascetur in cras. Lacinia placerat.</p>
-				<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis
-					elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis.
-					Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique faucibus magna adipiscing
-					aliquet blandit nisi dolor accumsan nascetur lorem. Vis enim. Curae. Mi arcu vis aliquam ipsum non accumsan ac mi faucibus
-					amet eu accumsan erat interdum semper accumsan. Eu sagittis tellus accumsan neque lorem penatibus in porttitor. Vivamus
-					commodo curae. Condimentum lobortis praesent id ac lorem. Lorem vis ipsum dolor feugiat consequat dolore adipiscing.</p>
-				<h3>Sed Magna Ornare</h3>
-				<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget
-					lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor,
-					risus nisi rutrum metus. In accumsan lorem nunc ultrices a ac eu accumsan ac id nullam. Nec lobortis. Faucibus. Mi commodo
-					laoreet arcu at non mi lacinia aliquet non lobortis phasellus accumsan nascetur varius. Integer orci porttitor eu faucibus
-					aliquet faucibus ac accumsan adipiscing accumsan odio. Ut adipiscing.</p>
-				<ul>
-					<li>Faucibus orci lobortis ac adipiscing integer.</li>
-					<li>Col accumsan arcu mi aliquet placerat.</li>
-					<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-					<li>Blandit massa non blandit tempor interdum.</li>
-					<li>Lacinia mattis arcu nascetur lobortis.</li>
-				</ul>
+				<h3>Address</h3>
+				<p>
+					Sudha Kunj, 1st Floor,<br /> Tilak Road, Opp. Brahman Sabha,<br /> Dombivli (E), Dist.: Thane,
+					<br />
+					<b>Phone :</b> 0251-2424474 <br />
+					<b>Email :</b>
+					<undef id="div-target">contact@mangalmurtiinvestments.com</undef><br />
+					<b>Timings :</b> 9.00am to 9.00pm (Mon to Sat)<br /> 8.30am to 1.00pm & 5.00pm to 9.00pm (Sun) <br />
+					<ul class="actions">
+						<li><a href="tel:5555555555" class="button special icon fa-phone">Call</a></li>
+						<li>
+							<button class="btn button icon fa-envelope" data-clipboard-action="copy" data-clipboard-target="#div-target" onclick="alert('Email Address has been Copied to Clipboard!')">
+								Email
+							</button>
+						</li>
+						<li>
+						</li>
+					</ul>
+					<script src="clipboard.min.js"></script>
+					<script>
+						var clipboard = new Clipboard('.btn');
+
+						clipboard.on('success', function (e) {
+							console.log(e);
+						});
+
+						clipboard.on('error', function (e) {
+							console.log(e);
+						});
+					</script>
+					<br><br>
+
+					<h3>About Us</h3>
+					<h4>Mangalmurti Investments</h4>
+					Back in 1982, a small sapling planted by Shri Chandrakant & Shrimati Rohini Dekhane, Pioneers in the investment field in
+					Dombivli, has today grown up into a strong tree serving clients across the section of society with a dedicated team
+					of professionals. We, then started with post office small savings schemes when income tax benefit was first granted
+					to investments in these schemes.
+					<p> Today, we serve an array of investment products ranging from post to Insurance, Mutual funds, Company Deposits, General
+						Insurance, Online Trading & Demat (Through Kotak Securities), ETF, IPO, FPO, NFO, etc. We provide total solutions to
+						all your Investment needs. Our commitment is to provide solutions to your investment needs after understanding your
+						financial goals.
+					</p>
+
+
+				</p>
 			</section>
 
 		</div>
