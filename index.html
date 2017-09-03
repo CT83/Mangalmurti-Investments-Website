@@ -99,7 +99,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q11" name="q1" value="1">
+							<h5><input type="radio" id="q11" name="q1" value="1" checked>
 								<label for="q11">Less than 3 years</label>
 							</h5>
 							<h5><input type="radio" id="q12" name="q1" value="3">
@@ -113,7 +113,7 @@
 							</h5>
 
 							<ul class="actions">
-								<li><a class="button" href="#B_Carousel" data-slide="next" onclick="submitResult()">Next</a></li>
+								<li><a class="button" href="#B_Carousel" data-slide="next">Next</a></li>
 							</ul>
 						</section>
 					</div>
@@ -131,7 +131,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q21" name="q2" value="0">
+							<h5><input type="radio" id="q21" name="q2" value="0" checked>
 								<label for="q21">Less than 2 years</label>
 							</h5>
 							<h5><input type="radio" id="q22" name="q2" value="1">
@@ -164,7 +164,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q31" name="q3" value="1">
+							<h5><input type="radio" id="q31" name="q3" value="1" checked>
 								<label for="q31">None</label>
 							</h5>
 							<h5><input type="radio" id="q32" name="q3" value="3">
@@ -197,7 +197,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q41" name="q4" value="0">
+							<h5><input type="radio" id="q41" name="q4" value="0" checked>
 								<label for="q41">Most concerned about my
 										investment losing value </label>
 							</h5>
@@ -230,7 +230,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q51" name="q5" value="3">
+							<h5><input type="radio" id="q51" name="q5" value="3" checked>
 								<label for="q51">Bonds and/or bond funds</label>
 							</h5>
 							<h5><input type="radio" id="q52" name="q5" value="6">
@@ -266,7 +266,7 @@
 							</p>
 
 							<br>
-							<h5><input type="radio" id="q61" name="q6" value="0">
+							<h5><input type="radio" id="q61" name="q6" value="0" checked>
 								<label for="q61">Sell all of my shares</label>
 							</h5>
 							<h5><input type="radio" id="q62" name="q6" value="2">
@@ -308,7 +308,7 @@
 									<th>Worst Case</th>
 								</tr>
 								<tr>
-									<td><input type="radio" id="q71" name="q7" value="0">
+									<td><input type="radio" id="q71" name="q7" value="0" checked>
 										<label for="q71">A</label></td>
 									<td>7.2%</td>
 									<td>16.3%</td>
@@ -360,15 +360,7 @@
 				</div>
 			</div>
 
-			<script>
-				function submitResult() {
-					var div = document.getElementById("q11");
-					alert(div);
-					var gender = document.querySelector('input[name = "q1"]:checked').value;
-					alert(gender);
-					alert(div.elements["q11"].value);
-				}
-			</script>
+
 
 			<div class="item" id="result">
 				<div id="main" class="wrapper style1">
@@ -376,8 +368,7 @@
 						<section id="content">
 							<h2>Results</h2>
 							<h4>Time Horizon</h4>
-							<p>
-								I plan to begin withdrawing money from my investments in:
+							<p id="resultText">
 							</p>
 
 							<ul class="actions">
@@ -388,6 +379,42 @@
 					</div>
 				</div>
 			</div>
+
+			<script>
+				function submitResult() {
+					var a1 = document.querySelector('input[name = "q1"]:checked').value;
+					var a2 = document.querySelector('input[name = "q2"]:checked').value;
+					var a3 = document.querySelector('input[name = "q3"]:checked').value;
+					var a4 = document.querySelector('input[name = "q4"]:checked').value;
+					var a5 = document.querySelector('input[name = "q5"]:checked').value;
+					var a6 = document.querySelector('input[name = "q6"]:checked').value;
+					var a7 = document.querySelector('input[name = "q7"]:checked').value;
+					var risk_total =
+						parseInt(a3) + parseInt(a4) + parseInt(a5) + parseInt(a6) + parseInt(a7);
+					var time_total = parseInt(a1) + parseInt(a2)
+					//alert("Risk Tolerance Score =" + risk_total);
+					//alert("Time Horizon Score =" + time_total);
+
+					var categoryUser="";
+					switch(risk_total){
+						case (risk_total<18 && time_total<18):
+						categoryUser="Conservative";
+						break;
+						case (
+							risk_total>18 && risk_total<31 &&  
+							time_total>18 && time_total>):
+					}
+					conserv line (18,0) (10,-14)
+					moder conv line (31,0) (18,-14)
+					moder line (40,0) (26,-14)
+					mode agre line (40,-5) (26,-14)
+
+
+					value=()
+					if()
+					document.getElementById("resultText").innerHTML = categoryUser
+				}
+			</script>
 		</div>
 	</div>
 
