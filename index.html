@@ -389,16 +389,16 @@
 					var a5 = document.querySelector('input[name = "q5"]:checked').value;
 					var a6 = document.querySelector('input[name = "q6"]:checked').value;
 					var a7 = document.querySelector('input[name = "q7"]:checked').value;
-					var risk_total =
-						parseInt(a3) + parseInt(a4) + parseInt(a5) + parseInt(a6) + parseInt(a7);
-					var time_total = parseInt(a1) + parseInt(a2)
+					var risk_total = parseInt(a3) + parseInt(a4) +
+						parseInt(a5) + parseInt(a6) + parseInt(a7);
+					var time_total = parseInt(a1) + parseInt(a2);
 					//alert("Risk Tolerance Score =" + risk_total);
 					//alert("Time Horizon Score =" + time_total);
 
+					var ResultText = "";
 					var categoryUser = "";
 					var x2 = parseInt(risk_total);
 					var y2 = parseInt(time_total);
-
 
 					var conv_x0 = 18;
 					var conv_y0 = 0;
@@ -410,43 +410,73 @@
 					var mod_conv_x1 = 18;
 					var mod_conv_y1 = 18;
 
-					var mod_conv_x0 = 40;
-					var mod_conv_y0 = 5;
-					var mod_conv_x1 = 26;
-					var mod_conv_y1 = 18;
+					var mod_x0 = 40;
+					var mod_y0 = 5;
+					var mod_x1 = 26;
+					var mod_y1 = 18;
 
 					var mod_agres_x0 = 40;
 					var mod_agres_y0 = 9;
 					var mod_agres_x1 = 32;
 					var mod_agres_y1 = 18;
 
-					var mod_agres_x0 = 40;
-					var mod_agres_y0 = 0;
-					var mod_agres_x1 = 40;
-					var mod_agres_y1 = 18;
+					var agres_x0 = 40;
+					var agres_y0 = 0;
+					var agres_x1 = 40;
+					var agres_y1 = 18;
 
 
-					var conv_x0 = 18;
-					var conv_y0 = 0;
-					var conv_x1 = 0;
-					var conv_y1 = 18;
-					
-					var value = (conv_x1 - conv_x0) * (y2 - conv_y0) - (x2 - conv_x0) * (conv_y1 - conv_y0);
-					
-					alert("x2="+x2);
-					alert("y2="+y2);
-					alert(value);
-					if (value < 0) {
-						alert("p2 is on the right side of the line");
+					//Test for Conv
+					var x0 = conv_x0;
+					var y0 = conv_y0;
+					var x1 = conv_x1;
+					var y1 = conv_y1;
+
+					var value = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+					if (value >= 0)
+						categoryUser = "Conservative";
+					else {
+						var x0 = mod_conv_x0;
+						var y0 = mod_conv_y0;
+						var x1 = mod_conv_x1;
+						var y1 = mod_conv_y1;
+						var value = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+
+						if (value >= 0)
+							categoryUser = "Moderately Convservative";
+						else {
+							var x0 = mod_x0;
+							var y0 = mod_y0;
+							var x1 = mod_x1;
+							var y1 = mod_y1;
+							var value = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+
+							if (value >= 0)
+								categoryUser = "Moderate";
+							else {
+								var x0 = mod_agres_x0;
+								var y0 = mod_agres_y0
+								var x1 = mod_agres_x1;
+								var y1 = mod_agres_y1;
+								var value = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+
+								if (value >= 0)
+									categoryUser = "Moderately Agressive";
+								else {
+									var x0 = agres_x0;
+									var y0 = agres_y0
+									var x1 = agres_x1;
+									var y1 = agres_y1;
+									var value = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
+
+									if (value >= 0)
+										categoryUser = "Agressive";
+								}
+							}
+						}
 					}
-
-					if (value > 0) {
-						alert("p2 is on the left side of the line");
-					}
-
-
-					//if ()
-					//	document.getElementById("resultText").innerHTML = categoryUser
+					document.getElementById("resultText").innerHTML =
+						"You are a " + categoryUser + " User.";
 				}
 			</script>
 		</div>
