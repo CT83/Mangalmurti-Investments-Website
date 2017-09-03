@@ -395,24 +395,58 @@
 					//alert("Risk Tolerance Score =" + risk_total);
 					//alert("Time Horizon Score =" + time_total);
 
-					var categoryUser="";
-					switch(risk_total){
-						case (risk_total<18 && time_total<18):
-						categoryUser="Conservative";
-						break;
-						case (
-							risk_total>18 && risk_total<31 &&  
-							time_total>18 && time_total>):
+					var categoryUser = "";
+					var x2 = parseInt(risk_total);
+					var y2 = parseInt(time_total);
+
+
+					var conv_x0 = 18;
+					var conv_y0 = 0;
+					var conv_x1 = 0;
+					var conv_y1 = 18;
+
+					var mod_conv_x0 = 31;
+					var mod_conv_y0 = 0;
+					var mod_conv_x1 = 18;
+					var mod_conv_y1 = 18;
+
+					var mod_conv_x0 = 40;
+					var mod_conv_y0 = 5;
+					var mod_conv_x1 = 26;
+					var mod_conv_y1 = 18;
+
+					var mod_agres_x0 = 40;
+					var mod_agres_y0 = 9;
+					var mod_agres_x1 = 32;
+					var mod_agres_y1 = 18;
+
+					var mod_agres_x0 = 40;
+					var mod_agres_y0 = 0;
+					var mod_agres_x1 = 40;
+					var mod_agres_y1 = 18;
+
+
+					var conv_x0 = 18;
+					var conv_y0 = 0;
+					var conv_x1 = 0;
+					var conv_y1 = 18;
+					
+					var value = (conv_x1 - conv_x0) * (y2 - conv_y0) - (x2 - conv_x0) * (conv_y1 - conv_y0);
+					
+					alert("x2="+x2);
+					alert("y2="+y2);
+					alert(value);
+					if (value < 0) {
+						alert("p2 is on the right side of the line");
 					}
-					conserv line (18,0) (10,-14)
-					moder conv line (31,0) (18,-14)
-					moder line (40,0) (26,-14)
-					mode agre line (40,-5) (26,-14)
+
+					if (value > 0) {
+						alert("p2 is on the left side of the line");
+					}
 
 
-					value=()
-					if()
-					document.getElementById("resultText").innerHTML = categoryUser
+					//if ()
+					//	document.getElementById("resultText").innerHTML = categoryUser
 				}
 			</script>
 		</div>
