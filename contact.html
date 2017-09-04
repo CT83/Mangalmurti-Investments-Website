@@ -55,7 +55,10 @@
 	<div id="map"></div>
 	<script>
 		function initMap() {
-			var uluru = { lat: 19.218087906207927, lng: 73.09152665701865 };
+			var uluru = {
+				lat: 19.218087906207927,
+				lng: 73.09152665701865
+			};
 			var map = new google.maps.Map(document.getElementById('map'), {
 				zoom: 15,
 				center: uluru
@@ -67,7 +70,6 @@
 		}
 	</script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZscmpjo_m6DOAJjbjvzGM381QYj8pJzA&callback=initMap">
-
 	</script>
 
 	<!-- Main -->
@@ -97,7 +99,13 @@
 							</button>
 						</li>
 						<li>
+							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyXOtDvywF_v7dznvuPZgadOxmQIb39s5O_Q5Q50TyOaQ-n6gJU/exec">
+							</form>
+
+
+							<a href="" class="button special icon fa-envelope">Leave Us a Message</a>
 						</li>
+
 					</ul>
 					<script src="clipboard.min.js"></script>
 					<script>
