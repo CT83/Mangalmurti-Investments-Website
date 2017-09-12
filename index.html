@@ -380,21 +380,32 @@
 								<form id="gform" method="POST" class="" action="https://script.google.com/macros/s/AKfycbyXOtDvywF_v7dznvuPZgadOxmQIb39s5O_Q5Q50TyOaQ-n6gJU/exec">
 									<!-- change the form action to your script url -->
 
-									<fieldset class="">
+									<div class="6u 12u$(xsmall)">
 										<label for="name">Name </label>
 										<input type="text" id="name" name="name" placeholder="Example, Mr. Savy Investor" />
-									</fieldset>
+									</div>
+
+									<div class="6u 12u$(xsmall)">
+											<label for="email"><em>Your</em> Email Address:</label>
+											<input id="email" name="email" type="email" value="" required placeholder="savy.investor@gmail.com" />
+											<span id="email-invalid" style="display:none">Must be a valid email address</span>
+										</div>
 
 									<fieldset class="">
 										<label for="message">Message </label>
-										<textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..."></textarea>
+										<textarea id="message" name="message" rows="5" 
+										text=
+										"
+										I just took your Quiz! 
+										I would love to start investing, and let Mangalmurti Investments be my guide in this venture. I would like my money to work as hard as I do. I would like to ensure my family's financial well-being in these modern times.
+										
+										It would be great if you could set an appointment for me. 
+										Please call me, as I look forward to it.
+
+										"></textarea>
 									</fieldset>
 
-									<fieldset class="">
-										<label for="email"><em>Your</em> Email Address:</label>
-										<input id="email" name="email" type="email" value="" required placeholder="your.name@email.com" />
-										<span id="email-invalid" style="display:none">Must be a valid email address</span>
-									</fieldset>
+									
 
 									<fieldset class="">
 										<label for="color">Favourite Color: </label>
