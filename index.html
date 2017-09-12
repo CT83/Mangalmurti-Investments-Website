@@ -358,9 +358,12 @@
 						<section id="content">
 							<h2>Results</h2>
 							<h4>Thanks for completing the Quiz.</h4>
+							<h3 id="resultText"></h3>
 
 							<ul class="actions">
-								<li><a class="button special" href="#B_Carousel" onclick="submitResult()" data-slide="next">Request an Appointment.</a></li>
+								<li><a class="button special" href="#B_Carousel" onclick="submitResult()" data-slide="next">
+									Proceed and Setup Appointment</a>
+								</li>
 								<li><a class="button">Call Us</a></li>
 							</ul>
 						</section>
@@ -384,32 +387,44 @@
 										<label for="name">Name </label>
 										<input type="text" id="name" name="name" placeholder="Example, Mr. Savy Investor" />
 									</div>
+									<br/>
 
 									<div class="6u 12u$(xsmall)">
-										<label for="email"><em>Your</em> Email Address:</label>
+										<label for="email">Your Email Address:</label>
 										<input id="email" name="email" type="email" value="" required placeholder="savy.investor@gmail.com" />
 										<span id="email-invalid" style="display:none">Must be a valid email address</span>
 									</div>
+									<br/>
 
-									<fieldset class="">
+									<div class="6u 12u$(xsmall)">
+										<label for="subject">Subject:</label>
+										<input id="subject" name="subject" type="text" value="Requesting an Appointment" required disabled>
+										</input>
+									</div>
+									<br/>
+
+									<div class="12u$">
 										<label for="message">Message </label>
 										<textarea id="message" name="message" rows="5">
+Dear Mangalmurti Investments,											
 I just took your Quiz! 
 I would love to start investing, and let Mangalmurti Investments be my guide in this venture. I would like my money to work as hard as I do. I would like to ensure my family's financial well-being in these modern times.
 										
 It would be great if you could set an appointment for me. 
 Please call me, as I look forward to it.
 										</textarea>
-									</fieldset>
+									</div>
+									<br/>
 
-
-
-									<fieldset class="">
-										<label for="color">Favourite Color: </label>
-										<input type="text" id="color" name="color" placeholder="green" />
-									</fieldset>
-
-									<button class="button special fa fa-paper-plane">Request an Appointment.</button>
+									<div class="6u 12u$(xsmall)">
+										<label for="color">Investor Class </label>
+										<input type="text" id="color" name="color">
+										</input>
+									</div>
+									<br/>
+									<div class="6u 12u$(xsmall)">
+										<button class="button special fa fa-paper-plane">Send</button>
+									</div>
 
 								</form>
 
