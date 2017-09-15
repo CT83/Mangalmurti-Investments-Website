@@ -287,7 +287,7 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<section id="content">
-							<h2>Question 7 of 7</h2>
+							<!--<h2>Question 7 of 7</h2>-->
 							<h4>Risk Tolerance</h4>
 							<h3>Review the chart below</h3>
 							<p>
@@ -327,14 +327,6 @@
 								</tr>
 
 								<tr>
-									<td><input type="radio" id="q74" name="q7" value="8">
-										<label for="q74">D</label></td>
-									<td>11.7%</td>
-									<td>42.8%</td>
-									<td>-24.0%</td>
-								</tr>
-
-								<tr>
 									<td><input type="radio" id="q75" name="q7" value="10">
 										<label for="q75">E</label></td>
 									<td>12.5%</td>
@@ -359,6 +351,20 @@
 							<h2>Results</h2>
 							<h4>Thanks for completing the Quiz.</h4>
 							<h3 id="resultText"></h3>
+
+							<h4 id="investorScore"></h4>
+							<b>What your Score Says About you? </b>
+							</br></br>
+							<b>Time Horizon Score</b>
+							</br>When will you begin withdrawing money from your account and at what rate?</br>
+							If it’s many years away, there may be more time to weather the market’s inevitable ups and downs and you may be comfortable
+							with a portfolio that has a greater potential for appreciation and a higher level of risk.
+							</br>
+							<b>Risk Tolerance Score</b>
+							</br>How do you feel about risk? </br>
+							Some investments fluctuate more dramatically in value than others but may have the potential for higher returns. It’s important
+							to select investments that fit within your level of tolerance for this risk
+
 
 							<ul class="actions">
 								<li><a class="button special" href="#B_Carousel" onclick="submitResult()" data-slide="next">
@@ -545,9 +551,13 @@ Please call me, as I look forward to it.
 						}
 					}
 				}
+				document.getElementById("investorScore").innerHTML =
+					"Time Horizon Score = " + time_total +
+					"</br>Risk Tolerance Score = " + risk_total +
+					"</br>Investor Type = " + categoryUser;
 				document.getElementById("resultText").innerHTML =
-					"We have classified you as a " + categoryUser +
-					" Investor. Setup an Appointment and our experienced Financial Advisors will assist you.";
+					"We have classified you as a <b>" + categoryUser +
+					" Investor</b>. <br/>Setup an Appointment and our experienced Financial Advisors will assist you.";
 				var investorTypeinEmail = document.getElementById("color");
 				investorTypeinEmail.value = categoryUser;
 			}
