@@ -430,8 +430,8 @@ Please call me, as I look forward to it.
 									<br/>
 
 									<div class="6u 12u$(xsmall)">
-										<label for="color">Investor Class </label>
-										<input type="text" id="color" name="color" required>
+										<label for="inv_class">Investor Class </label>
+										<input type="text" id="inv_class" name="inv_class" required>
 										</input>
 									</div>
 									<br/>
@@ -560,7 +560,7 @@ Please call me, as I look forward to it.
 				document.getElementById("resultText").innerHTML =
 					"We have classified you as a <b>" + categoryUser +
 					" Investor</b>. <br/>Setup an Appointment and our experienced Financial Advisors will assist you.";
-				var investorTypeinEmail = document.getElementById("color");
+				var investorTypeinEmail = document.getElementById("inv_class");
 				investorTypeinEmail.value = categoryUser;
 			}
 		</script>
