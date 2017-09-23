@@ -368,7 +368,8 @@
 
 
 							<ul class="actions">
-								<li><a class="button special" href="#B_Carousel" onclick="submitResult()" data-slide="next">
+								<li><a id="requestAppointment_anchor" class="button special" href="requestAppointment.html" +categoryUser onclick="submitResult()"
+									    data-slide="next">
 									Proceed and Setup Appointment</a>
 								</li>
 								<li><a class="button" href="tel:0251-2424474">Call Us</a></li>
@@ -389,8 +390,7 @@
 
 								<script src="js/jquery.min.js"></script>
 								<script src="js/bootstrap.min.js"></script>
-								<form id="gform" method="POST" class="" 
-								action="https://script.google.com/macros/s/AKfycbwf_yBaLr2_A-inwwfCtt82b1feDmUDf_Fv5CBMQVTUZBvS7E0/exec">
+								<form id="gform" method="POST" class="" action="https://script.google.com/macros/s/AKfycbwf_yBaLr2_A-inwwfCtt82b1feDmUDf_Fv5CBMQVTUZBvS7E0/exec">
 									<!-- change the form action to your script url -->
 
 									<div class="6u 12u$(xsmall)">
@@ -563,8 +563,10 @@ Please call me, as I look forward to it.
 				document.getElementById("resultText").innerHTML =
 					"We have classified you as a <b>" + categoryUser +
 					" Investor</b>. <br/>Setup an Appointment and our experienced Financial Advisors will assist you.";
-				var investorTypeinEmail = document.getElementById("inv_class");
-				investorTypeinEmail.value = categoryUser;
+
+				var strLink = "requestAppointment.html?" + categoryUser;
+				document.getElementById("requestAppointment_anchor").setAttribute("href", strLink);
+
 			}
 		</script>
 	</div>
