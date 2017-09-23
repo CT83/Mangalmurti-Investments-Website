@@ -355,7 +355,6 @@
 							<h4 id="investorScore"></h4>
 							<b>What your Score Says About you? </b>
 							</br>
-							</br>
 							<b>Time Horizon Score</b>
 							</br>When will you begin withdrawing money from your account and at what rate?</br>
 							If it’s many years away, there may be more time to weather the market’s inevitable ups and downs and you may be comfortable
@@ -478,12 +477,12 @@
 					}
 				}
 				document.getElementById("investorScore").innerHTML =
-					"Time Horizon Score = " + time_total +
+					"<b>Your Results</b>" +
+					"</br>Time Horizon Score = " + time_total +
 					"</br>Risk Tolerance Score = " + risk_total +
 					"</br>Investor Type = " + categoryUser;
 				document.getElementById("resultText").innerHTML =
-					"We have classified you as a <b>" + categoryUser +
-					" Investor</b>. <br/>Setup an Appointment and our experienced Financial Advisors will assist you.";
+					"<br/>Setup an Appointment & our experienced Financial Advisors will assist you.";
 
 				var strLink = "requestAppointment.html?" + categoryUser;
 				document.getElementById("requestAppointment_anchor").setAttribute("href", strLink);
