@@ -4,7 +4,7 @@
  * All credit still goes to Martin and any issues/complaints/questions to me. *
  ******************************************************************************/
 
-var TO_ADDRESS = "contact.nelsonic+form.submit@gmail.com"; // change this ...
+var TO_ADDRESS = "contact@mangalmurtiinvestments.com"; // change this ...
 
 function formatMailBody(obj) { // function to spit out all the keys/values from the form in HTML
   var result = "";
@@ -61,7 +61,7 @@ function record_data(e) {
     for (var i = 1; i < headers.length; i++) { // start at 1 to avoid Timestamp column
       if(headers[i].length > 0) {
         row.push(e.parameter[headers[i]]); // add data to row
-      }
+        }
     }
     // more efficient to set values as [][] array than individually
     sheet.getRange(nextRow, 1, 1, row.length).setValues([row]);
