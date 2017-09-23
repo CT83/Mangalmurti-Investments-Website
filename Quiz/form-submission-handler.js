@@ -86,7 +86,7 @@ function validEmail(email) { // see:
     }
   }
   function loaded() {
-    console.log('contact form submission handler loaded successfully');
+    console.log('Contact Form Submission Handler Loaded Successfully');
     // bind to the submit event of our form
     var form = document.getElementById('gform');
     form.addEventListener("submit", handleFormSubmit, false);
