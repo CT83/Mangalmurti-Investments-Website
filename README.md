@@ -30,13 +30,8 @@ Aug 2017 - November 2015 (1 Hours/Day)
 
 <hr>
 <b>Screenshots</b>
-
-Old Website
-![Screenshot](README/new1.png)
-
-<br>
-New Updated Website
-![Screenshot](README/new1.png)
+![Screenshot](README/new1.png "New Updated Website")
+![Screenshot](README/old1.PNG "Old Website")
 
 
 
