@@ -32,7 +32,7 @@ Aug 2017 - November 2015 (1 Hours/Day)
 </ul>
 
 <hr>
-<b>Screenshots</b>
+<b>Screenshots</b>:<br><br>
 <b>Old Website</b>
 <img src="README/old1.PNG">
 
@@ -43,21 +43,23 @@ Aug 2017 - November 2015 (1 Hours/Day)
 
 
 <br>
-<b>Libraries:</b>
+<b>Libraries</b>:<br>
 <ul>
 <li>BootStrap</li>
 <li>Landed <i>a BootStrap theme by HTML5 UP</i></li>
 <li>Cushy CMS <i> to make site editing easier</li>
 </ul>
 
-<br><br>
-<b>Tools:</b>
+<br>
+<b>Tools</b>:
 <ul>
 <li>Visual Studio Code</li>
 </ul>
 
 <hr>
 <b>Conclusion</b>
-The client, Mr. Dekhane was pleasantly surprised with the new look and feel of the website. Gathering of Customer details was now possible. The website appropriately represented what Mangalmurti Investments stood for.
-
+<ul>
+<li>The client, Mr. Dekhane was pleasantly surprised with the new look and feel of the website. Gathering of Customer details was now possible. The website appropriately represented what Mangalmurti Investments stood for.
+</li></ul>
+<br><hr>
 <b>tl;dr</b> <a href="mangalmurtiinvestments.com/bootstrap/GitHub/index.html"> Live Demo</a>
