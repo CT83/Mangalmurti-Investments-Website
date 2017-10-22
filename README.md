@@ -1,5 +1,7 @@
 # Mangalmurti-Investments-Website
 
+<a href="mangalmurtiinvestments.com/bootstrap/GitHub/index.html"> Live Demo</a>
+
 <b>Introduction</b>:
 The aim of this project is to redesign, renovate and bring the old website Mangalmurti Investments up to speed with the modern style of UI and technologies and render easy maintainability of the same.
 
@@ -16,6 +18,7 @@ Aug 2017 - November 2015 (1 Hours/Day)
 <b>Unique Selling Point</b>
 <ul>
 <li>Risk Tolerance Quizzes, which provided the user with a choice to setup a appointment after they completed it.</li>
+<li>Data from these Quizzes exported to a Google Sheet, and Mangalmurti Investments is notified about requested Appointments by Email.</li>
 <li>Ability to send Emails using Static FTP Host, using Google Script</li>
 </ul>
 
@@ -30,9 +33,13 @@ Aug 2017 - November 2015 (1 Hours/Day)
 
 <hr>
 <b>Screenshots</b>
-<img src="README/new1.png">
+<b>Old Website</b>
 <img src="README/old1.PNG">
 
+<br>
+<hr>
+<b>New Updated Website</b>
+<img src="README/new1.png">
 
 
 <br>
@@ -40,6 +47,7 @@ Aug 2017 - November 2015 (1 Hours/Day)
 <ul>
 <li>BootStrap</li>
 <li>Landed <i>a BootStrap theme by HTML5 UP</i></li>
+<li>Cushy CMS <i> to make site editing easier</li>
 </ul>
 
 <br><br>
@@ -48,7 +56,8 @@ Aug 2017 - November 2015 (1 Hours/Day)
 <li>Visual Studio Code</li>
 </ul>
 
-<br><hr><br>
+<hr>
 <b>Conclusion</b>
-After all the Stats Generation, and running successfully for a month the website went offline and turned out to be a scam and thus due to unavoidable circumstances the project failed to generate me any revenue, my efforts practically being futile; Though looking back, the experience I gained during the development of the application prepared me for my future projects.
+The client, Mr. Dekhane was pleasantly surprised with the new look and feel of the website. Gathering of Customer details was now possible. The website appropriately represented what Mangalmurti Investments stood for.
 
+<b>tl;dr</b> <a href="mangalmurtiinvestments.com/bootstrap/GitHub/index.html"> Live Demo</a>
