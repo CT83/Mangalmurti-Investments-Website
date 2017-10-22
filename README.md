@@ -30,9 +30,8 @@ Aug 2017 - November 2015 (1 Hours/Day)
 
 <hr>
 <b>Screenshots</b>
-![Screenshot](README/new1.png)
-<b>Screenshots</b>
-![Screenshot](README/old1.PNG)
+<img src="README/new1.png">
+<img src="README/old1.PNG">
 
 
 
