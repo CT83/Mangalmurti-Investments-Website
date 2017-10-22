@@ -1,6 +1,6 @@
 # Mangalmurti-Investments-Website
 
-<a href="www.mangalmurtiinvestments.com/bootstrap/GitHub/index.html"> Live Demo</a>
+[Live Demo](http://mangalmurtiinvestments.com/)
 
 <b>Introduction</b>:
 The aim of this project is to redesign, renovate and bring the old website Mangalmurti Investments up to speed with the modern style of UI and technologies and render easy maintainability of the same.
@@ -62,4 +62,4 @@ Aug 2017 - November 2017 (1 Hour/Day)
 <li>The client, Mr. Dekhane was pleasantly surprised with the new look and feel of the website. Gathering of Customer details was now possible. The website appropriately represented what Mangalmurti Investments stood for.
 </li></ul>
 <br><hr>
-<b>tl;dr</b> <a href="www.mangalmurtiinvestments.com/bootstrap/GitHub/index.html"> Live Demo</a>
+<b>tl;dr</b> [Live Demo](http://mangalmurtiinvestments.com/)
