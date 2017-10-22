@@ -35,7 +35,7 @@ Old Website
 ![Screenshot](README/old1.PNG)
 
 <br>
-<b>Newer Updated Website</b>
+New Updated Website
 ![Screenshot](README/new1.png)
 
 
